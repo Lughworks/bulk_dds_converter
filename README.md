@@ -1,29 +1,56 @@
 # Bulk DDS Converter
 
-A high-performance DDS texture converter with optional GPU acceleration.
+A high-performance **bulk texture conversion tool** designed for speed, stability, and control.
 
-## Features
+---
 
-- Bulk texture conversion
-- CPU / GPU toggle
-- Progress tracking
-- Logging system
+## ⚡ Features
+
+- GPU acceleration toggle
+- Bulk folder processing
+- Real-time progress tracking
+- Live speed metrics
+- Detailed logging system
 - Dark AAA-style UI
+- Abort-safe cancellation system
 
-## Requirements
+---
 
-- Windows
-- .NET (your version)
+## 🖥️ Preview
+
+![UI Preview](https://via.placeholder.com/800x400)
+
+---
+
+## 🚀 Download
+
+👉 Go to **Releases**  
+Download the latest `.zip` build
+
+---
+
+## ⚙️ Requirements
+
+- Windows 10 / 11
+- .NET Runtime (if not self-contained build)
 - Visual C++ Redistributable
-- DirectXTexNet dependency
+- DirectXTex dependencies
 
-## Usage
+---
 
-1. Select a folder
-2. Choose format
-3. Toggle GPU if needed
-4. Start conversion
+## 🧪 Usage
 
-## Build
+1. Run the application
+2. Select your texture folder
+3. Choose DDS format
+4. Enable GPU if desired
+5. Click **Initialize Conversion**
 
-Open the solution in Visual Studio and build.
+---
+
+## 📦 Build from Source
+
+```bash
+git clone https://github.com/YOUR_USERNAME/BulkDDSConverter.git
+cd BulkDDSConverter
+dotnet build
