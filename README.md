@@ -104,7 +104,7 @@ https://github.com/lughworks/bulk_dds_converter/releases
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/lughworks/bulk_dds_converter/main/screenshot.png" width="850" />
+  <img src="https://raw.githubusercontent.com/lughworks/bulk_dds_converter/main/assets/screenshot.png" width="850" />
 </p>
 
 <div align="center">

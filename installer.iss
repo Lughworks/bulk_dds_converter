@@ -1,6 +1,6 @@
 [Setup]
 AppName=Bulk DDS Converter
-AppVersion=1.0.0
+AppVersion=1.0.9
 DefaultDirName={pf}\BulkDDSConverter
 DefaultGroupName=Bulk DDS Converter
 OutputDir=dist
@@ -8,6 +8,12 @@ OutputBaseFilename=BulkDDSConverter_Setup
 Compression=lzma
 SolidCompression=yes
 WizardStyle=modern
+AppPublisher=Lughworks
+AppPublisherURL=https://github.com/Lughworks
+AppSupportURL=https://github.com/Lughworks
+AppUpdatesURL=https://github.com/Lughworks
+SetupIconFile=assets\icon.ico
+UninstallDisplayIcon={app}\BulkDDSConverter.exe
 
 [Files]
 Source: "publish\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs
