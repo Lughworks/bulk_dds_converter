@@ -69,7 +69,7 @@
 <div align="center">
 
 👉 Download the latest release here:  
-https://github.com/YOUR_USERNAME/BulkDDSConverter/releases
+https://github.com/lughworks/bulk_dds_converter/releases
 
 </div>
 
