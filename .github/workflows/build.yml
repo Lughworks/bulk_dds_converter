@@ -27,6 +27,9 @@ jobs:
     - name: Publish
       run: dotnet publish BulkDDSConverter.csproj -c Release -r win-x64 --self-contained true -o publish
 
+    - name: Install Inno Setup
+      run: choco install innosetup -y
+
     - name: Zip Build
       run: |
         powershell Compress-Archive -Path publish\* -DestinationPath BulkDDSConverter.zip
