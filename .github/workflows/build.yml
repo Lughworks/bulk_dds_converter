@@ -30,6 +30,10 @@ jobs:
     - name: Install Inno Setup
       run: choco install innosetup -y
 
+    - name: Build Installer
+      run: |
+        "C:\Program Files (x86)\Inno Setup 6\ISCC.exe" installer.iss
+
     - name: Zip Build
       run: |
         powershell Compress-Archive -Path publish\* -DestinationPath BulkDDSConverter.zip
@@ -37,6 +41,25 @@ jobs:
     - name: Create Release
       uses: softprops/action-gh-release@v2
       with:
-        files: BulkDDSConverter.zip
+        tag_name: ${{ github.ref_name }}
+        name: Bulk DDS Converter ${{ github.ref_name }}
+        body: |
+          ## ⚡ Bulk DDS Converter
+
+          A high-performance GPU-accelerated texture conversion tool built for batch processing.
+
+          ### ✨ Features
+          - GPU-accelerated DDS compression
+          - Supports BC1, BC3, BC5, BC7 formats
+          - Batch folder processing
+          - Real-time progress tracking
+          - Clean, modern UI
+
+          ### 📥 Download
+          Download the installer below and run to install the application.
+
+          ---
+          Built with a high-performance pipeline and optimized for speed.
+        files: dist/BulkDDSConverter_Setup.exe
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
