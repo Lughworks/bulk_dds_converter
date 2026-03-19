@@ -10,7 +10,7 @@ SolidCompression=yes
 WizardStyle=modern
 
 [Files]
-Source: "bin\Release\net9.0-windows\win-x64\publish\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs
+Source: "publish\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs
 
 [Icons]
 Name: "{group}\Bulk DDS Converter"; Filename: "{app}\BulkDDSConverter.exe"
